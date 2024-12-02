@@ -1,0 +1,13 @@
+Django                # Framework for the backend
+djangorestframework  # Django REST framework for APIs
+boto3                # AWS SDK for Python
+botocore             # Core library for AWS boto3
+django-cors-headers  # For handling CORS in Django
+pytz                 # Timezone support for Django
+sqlparse             # SQL parser for Django
+asgiref==3.7.2               # ASGI support for Django
+djangorestframework-simplejwt    # JWT-based authentication
+gunicorn==20.1.0             # WSGI server for deployment
+mysqlclient
+django-storages[boto3]
+django-cors-headers
