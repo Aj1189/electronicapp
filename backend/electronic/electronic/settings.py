@@ -142,7 +142,7 @@ DATABASES = {
         'NAME': 'backend',
         'USER': 'admin',
         'PASSWORD': 'admin1234',
-        'HOST': 'database-1.c1o42oas4wyp.us-east-1.rds.amazonaws.com',
+        'HOST': 'database-1.cjiyi2aog4hy.us-east-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
@@ -203,10 +203,10 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID', 'default-access-key')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY', 'default-secret-key')
 print(os.environ)
-AWS_STORAGE_BUCKET_NAME = 'allproductsimages'
+AWS_STORAGE_BUCKET_NAME = 'allproductsimagess'
 AWS_REGION_NAME = 'us-east-1'
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:014498666344:SellerNotificationsTopic'
-SQS_QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/014498666344/OrderQueue'
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:717279704201:SellerNotificationsTopic'
+SQS_QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/717279704201/OrderQueue'
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_REGION_NAME}.amazonaws.com'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
